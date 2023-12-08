@@ -1,32 +1,86 @@
-import sys
-# If using Jupyter Notebook jupyter_argparse.core is another option for you
-import argparse
-from scapy.all import scapy
+https://st.depositphotos.com/1491329/2459/i/600/depositphotos_24592873-stock-photo-fashion-beauty-manicure-and-make.jpg?forcejpeg=true
 
-parser = argparse.ArgumentParser()
-# call it from the command line using root/admin privileges
-# Syntax : python <filename> -ip <IP>/<Subnet>
-# e.g. sudo Sniff_Tool.py -ip 172.16.24.1/24
-# Note : Put the ip address of your default gateway(router).
-parser.add_argument("-ip", "--ipadd", help="IP Address/Subnet Mask")
-args = parser.parse_args()
 
-if not args.ipadd:
-    print("Invalid Syntax")
-    print("Use --help or -h for options.")
-    sys.exit(1)
-else:
-    # pdst stands for destination IP address
-    arp_request = scapy.layers.l2.ARP(pdst= args.ipadd)
-    broadcast_frame = scapy.layers.l2.Ether(dst="ff:ff:ff:ff:ff:ff")
-    final_request = broadcast_frame/arp_request
-    results_ans = scapy.layers.l2.srp(final_request, timeout=2, verbose=False)[0]
-    # results_unaswered = scapy.layers.l2.srp(final_request, timeout=2, verbose=False)[1]
-    results = []
-    for i in range(0,len(results_ans)):
-        # psrc stands for source IP Address
-        # hwsrc stands for destination MAC Address
-        clients = {"ip":results_ans[i][1].psrc," mac":results_ans[i][1].hwsrc}
-        results.append(clients)
-    for i in range(len(results)):
-        print(results[i])
+https://i.pinimg.com/736x/a3/59/a7/a359a7bdc909c68a61ab9f89d31b8877.jpg
+
+
+
+
+https://st3.depositphotos.com/6903990/14825/i/380/depositphotos_148252105-stock-photo-beautiful-woman-with-fashion-make.jpg?forcejpeg=true
+
+
+https://static9.depositphotos.com/1003098/1179/i/380/depositphotos_11796296-stock-photo-blow-drying-hair-after-haircut.jpg?forcejpeg=true
+
+
+https://st2.depositphotos.com/6903990/11216/i/380/depositphotos_112165644-stock-photo-woman-with-curly-hair-and.jpg?forcejpeg=true
+
+
+
+
+ https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2F31602%2FIN%2F31602.png%3Fversion%3D1618835400&w=1440&bc=%23f5f5f5&ib=%23f5f5f5&h=1440&q=30
+
+        https://static-bebeautiful-in.unileverservices.com/5-beauty-products-we-are-loving-this-month_mobilehome.jpg
+
+        https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61j7D9v5-ML._AC_UF1000,1000_QL80_.jpg
+
+        https://www.joypersonalcare.com/media/catalog/product/s/k/skincarehover.jpg
+
+     https://bhramarah.in/cdn/shop/files/facecramnormaltoaoilywebslide_7e0b19bb-b1c2-4632-9139-ad20e4a387a1.jpg?v=1695385455&width=480   
+
+         https://bhramarah.in/cdn/shop/files/glowseriumwebslide.jpg?v=1695280162&width=480  
+
+        https://img.freepik.com/free-photo/collection-beauty-products-with-copy-space_23-2148620110.jpg 
+
+  https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?cs=srgb&dl=pexels-oleksandr-p-3800060.jpg&fm=jpg 
+
+   
+
+ https://content.jdmagicbox.com/comp/mathura/z1/9999px565.x565.120302180121.x9z1/catalogue/mini-beauty-parlour-dori-bazar-mathura-ladies-beauty-parlours-g24va40.jpg
+
+
+
+https://content.jdmagicbox.com/comp/service_catalogue/salons-attr-o3-plus-whitening-clean-up-spa1110-5-250.jpg
+
+
+https://content.jdmagicbox.com/comp/service_catalogue/salons-attr-age-lock-facial-spa4489-5.jpg?clr=
+                 
+https://content.jdmagicbox.com/comp/mathura/z1/9999px565.x565.120302180121.x9z1/catalogue/mini-beauty-parlour-dori-bazar-mathura-ladies-beauty-parlours-g24va40.jpg
+
+
+
+https://images.jdmagicbox.com/comp/service_catalogue/salons-attr-regular-facial-spa1356-3.jpg?clr=
+
+
+https://content.jdmagicbox.com/comp/service_catalogue/salons-attr-o3-plus-whitening-clean-up-spa1110-5-250.jpg
+
+
+https://content.jdmagicbox.com/comp/service_catalogue/salons-attr-age-lock-facial-spa4489-5.jpg?clr=
+
+
+
+                
+                https://img.freepik.com/premium-photo/hairdresser-beauty-salon-makes-hairstyle-girl-bride-with-long-curly-brown-hair_118086-3924.jpg
+
+
+
+
+
+https://lh3.googleusercontent.com/piZTCNRV9pbsNmM7d66ATluGCElOtoEWAhKt1_2P9049CKhEBNhBfHsEfHTUpfcW_jsnUUH5mR6zmBFfCQkKrA86BjWC 
+
+
+
+
+ https://www.garnier.in/-/media/project/loreal/brand-sites/garnier/apac/in/all-article-pages/hair-color-tips/hair-coloring-trends-through-the-decades/6-thumbnail.jpg  
+
+
+
+
+
+
+
+
+
+
+
+
+
